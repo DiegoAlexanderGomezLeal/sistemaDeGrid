@@ -11,7 +11,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-gap: 8px;
     width: 800px;
     height: 700px;
@@ -19,8 +19,8 @@ body{
     grid-template-areas: 
     "item__1 item__2 item__2"
     "item__1 item__2 item__2"
-    "item__3 item__4 item__4"
-    "item__3 item__4 item__4";
+    "item__3 item__3 item__4"
+    "item__3 item__3 item__4";
 }
 .container div{
     background: var(--color-secundary);
@@ -29,28 +29,77 @@ body{
 }
 .item__1{
     grid-area: item__1;
-}
-.item__2{
-    grid-area: item__2;
-}
-.item__3{
-    grid-area: item__3;
-}
-.item__4{
-    grid-area: item__4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 20px;
 }
 .mac{
     width: 100%;
     height: 15vh;
     object-fit: contain;
 }
+.text{
+    color: var(--color-price);
+}
+.title{
+    margin-top: 6px;
+}
+.price{
+    width: 80%;
+    font-size: .9rem;
+    text-align: center;
+}
+.base{
+    font-size: 0.7rem;
+}
+.colors{
+    width: 100%;
+    height: 2vh;
+    object-fit: contain;
+}
+.item__2{
+    grid-area: item__2;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    flex-direction: column;
+}
+.item__2 img{
+    width: 100%;
+    height: 26vh;
+    object-fit: contain;
+}
+.text2{
+    width: 30%;
+    font-size: 1.5rem;
+}
+.item__3{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    flex-direction: column;
+    grid-area: item__3;
+}
+.item__3 img{
+    width: 100%;
+    height: 26vh;
+    object-fit: contain;
+}
+.text3{
+    font-size: 1.9rem;
+}
+.item__4{
+    grid-area: item__4;
+}
 @media (width < 800px){
     .container{
         width: 100%;
         grid-template-areas:
-        "MacBook_Air MacBook_Air MacBook_Air"
-        "MacBook_Pro_App MacBook_Pro_App MacBook_Pro_App"
-        "MacBook_Air_Screen MacBook_Air_Screen MacBook_Air_Screen"
-        "MacBook_Air_Screen_Pro MacBook_Air_Screen_Pro MacBook_Air_Screen_Pro";
+        "item__1 item__2 item__2"
+        "item__1 item__2 item__2"
+        "item__3 item__3 item__4"
+        "item__3 item__3 item__4";
     }
 }
