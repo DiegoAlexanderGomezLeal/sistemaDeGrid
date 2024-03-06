@@ -6,8 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    width: 1200px;
-    height: 900px;
+    width: 900px;
+    height: 700px;
     grid-gap: 8px;
     margin: 15px auto;
     display: grid;
@@ -21,79 +21,53 @@
     background: var(--color-secundary);
 }
 .item__1{
-    /* grid-area: nits; */
-    grid-column: 1 / 5;
-    grid-row: 1 / 3;
+    grid-area: nits;
 }
 .item__2{
-    /* grid-area: gps; */
-    grid-column: 5 / 8;
-    grid-row: 1 / 2;
+    grid-area: gps;
 }
 .item__3{
-    /* grid-area: montaña; */
-    grid-column: 8 / 10;
-    grid-row: 1 / 2;
+    grid-area: logs;
 }
 .item__4{
-    /* grid-area: modular; */
-    grid-column: 10 / 14;
-    grid-row: 1 / 3;
+    grid-area: neutral;
 }
 .item__5{
-    /* grid-area: reloj; */
-    grid-column: 5 / 10;
-    grid-row: 2 / 5;
+    grid-area: Montaña;
 }
 .item__6{
-    /* grid-area: depth; */
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
+    grid-area: face;
 }
 .item__7{
-    /* grid-area: carbon; */
-    grid-column: 3 / 5;
-    grid-row: 3 / 4;
+    grid-area: colors;
 }
 .item__8{
-    /* grid-area: hora; */
-    grid-column: 10 / 12;
-    grid-row: 3 / 4;
+    grid-area: relojGrande;
 }
 .item__9{
-    /* grid-area: dive; */
-    grid-column: 12 / 14;
-    grid-row: 3 / 4;
+    grid-area: HRS;
 }
 .item__10{
-    /* grid-area: costom; */
-    grid-column: 1 / 5;
-
+    grid-area: meters;
 }
 .item__11{
-    grid-column: 10 / 14;
+    grid-area: button;
 }
 .item__12{
-    grid-column: 1 / 4;
-    grid-row: 5 / 7;
+    grid-area: SIP;
 }
 .item__13{
-    grid-column: 4 / 5;
-    grid-row: 5 / 7;
+    grid-area: SIRI;
 }
 .item__14{
-    grid-column: 5 / 6;
-    grid-row: 5 / 7;
+    grid-area: feactures;
 }
 .item__15{
-    grid-column: 6 / 9;
-    grid-row: 5 / 7;
+    grid-area: Iphone;
 }
 .item__16{
-    grid-column: 9 / 10;
-    grid-row: 5 / 7;
+    grid-area: boost;
 }
 .item__17{
-    grid-column: 10 / 14;
-    grid-row: 5 / 7;
+    grid-area: mano;
 }
