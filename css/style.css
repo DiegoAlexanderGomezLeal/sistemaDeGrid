@@ -6,14 +6,29 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    width: 900px;
+    width: 1500px;
     height: 700px;
     grid-gap: 8px;
     margin: 15px auto;
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    "item__1 item__1 item__1 item__1 item__1 item__1 item__2 item__2 item__2 item__2 item__2 item__3 item__3 item__3 item__4 item__4 item__4 item__4 item__4 item__4"
+    "item__1 item__1 item__1 item__1 item__1 item__1 item__2 item__2 item__2 item__2 item__2 item__3 item__3 item__3 item__4 item__4 item__4 item__4 item__4 item__4"
+    "item__1 item__1 item__1 item__1 item__1 item__1 item__2 item__2 item__2 item__2 item__2 item__3 item__3 item__3 item__4 item__4 item__4 item__4 item__4 item__4" 
+    "item__1 item__1 item__1 item__1 item__1 item__1 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__4 item__4 item__4 item__4 item__4 item__4"
+    "item__5 item__5 item__5 item__6 item__6 item__6 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__4 item__4 item__4 item__4 item__4 item__4"
+    "item__5 item__5 item__5 item__6 item__6 item__6 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__9 item__9 item__9 item_10 item_10 item_10"
+    "item__5 item__5 item__5 item__6 item__6 item__6 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__9 item__9 item__9 item_10 item_10 item_10"
+    "item__7 item__7 item__7 item__7 item__7 item__7 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item_11 item_11 item_11 item_11 item_11 item_11"
+    "item__7 item__7 item__7 item__7 item__7 item__7 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item__8 item_11 item_11 item_11 item_11 item_11 item_11"
+    "item_12 item_12 item_12 item_12 item_12 item_13 item_13 item_14 item_14 item_15 item_15 item_15 item_16 item_16 item_17 item_17 item_17 item_17 item_17 item_17"
+    "item_12 item_12 item_12 item_12 item_12 item_13 item_13 item_14 item_14 item_15 item_15 item_15 item_16 item_16 item_17 item_17 item_17 item_17 item_17 item_17"
+    "item_12 item_12 item_12 item_12 item_12 item_13 item_13 item_14 item_14 item_15 item_15 item_15 item_16 item_16 item_17 item_17 item_17 item_17 item_17 item_17";
+    
+
 }
 .container div{
     border: 1px solid var(--color-primary);
@@ -21,53 +36,70 @@
     background: var(--color-secundary);
 }
 .item__1{
-    grid-area: nits;
+    grid-area: item__1;
+    background-color: #ff0000; 
 }
 .item__2{
-    grid-area: gps;
+    grid-area: item__2;
+    background-color: #ff0000; 
 }
 .item__3{
-    grid-area: logs;
+    grid-area: item__3;
+    background-color: #ff0000; 
 }
 .item__4{
-    grid-area: neutral;
+    grid-area: item__4;
+    background-color: #ff0000; 
 }
 .item__5{
-    grid-area: Montaña;
+    grid-area: item__5;
+    background-color: #ff0000;  
 }
 .item__6{
-    grid-area: face;
+    grid-area: item__6;
+    background-color: #ff0000;  
 }
 .item__7{
-    grid-area: colors;
+    grid-area: item__7;
+    background-color: #ff0000;  
 }
 .item__8{
-    grid-area: relojGrande;
+    grid-area: item__8;
+    background-color: #ff0000;  
 }
 .item__9{
-    grid-area: HRS;
+    grid-area: item__9;
+    background-color: #ff0000;  
 }
 .item__10{
-    grid-area: meters;
+    grid-area: item_10;
+    background-color: #ff0000; 
 }
 .item__11{
-    grid-area: button;
+    grid-area: item_11;
+    background-color: #ff0000; 
 }
 .item__12{
-    grid-area: SIP;
+    grid-area: item_12;
+    background-color: #ff0000; 
 }
 .item__13{
-    grid-area: SIRI;
+    grid-area: item_13;
+    background-color: #ff0000;  
 }
 .item__14{
-    grid-area: feactures;
+    grid-area: item_14;
+    background-color: #ff0000;  
 }
 .item__15{
-    grid-area: Iphone;
+    grid-area: item_15;
+    background-color: #ff0000;  
 }
 .item__16{
-    grid-area: boost;
+    grid-area: item_16;
+    background-color: #ff0000; 
 }
 .item__17{
-    grid-area: mano;
+    grid-area: item_17;
+    background-color: #ff0000; 
 }
